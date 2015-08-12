@@ -43,12 +43,12 @@ This results in the following running containers:
 
 ```bash
 > $ docker-compose ps
-                  Name                  Command         State           Ports          
-         -----------------------------------------------------------------------------
-         dockerzf2_application_1   /sbin/my_init        Up                             
-         dockerzf2_db_1            /usr/local/bin/run   Up      0.0.0.0:3306->3306/tcp 
-         dockerzf2_nginx_1         /sbin/my_init        Up      0.0.0.0:80->80/tcp     
-         dockerzf2_php_1           /sbin/my_init        Up      9000/tcp 
+         Name                  Command         State           Ports          
+-----------------------------------------------------------------------------
+dockerzf2_application_1   /sbin/my_init        Up                             
+dockerzf2_db_1            /usr/local/bin/run   Up      0.0.0.0:3306->3306/tcp 
+dockerzf2_nginx_1         /sbin/my_init        Up      0.0.0.0:80->80/tcp     
+dockerzf2_php_1           /sbin/my_init        Up      9000/tcp 
 ```
 
 # Read logs
