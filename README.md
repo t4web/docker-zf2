@@ -1,7 +1,7 @@
 docker-zf2
 ==============
 
-Just a litle Docker configuration to have a complete stack for running Zend Framework v2 into Docker containers using docker-compose tool.
+Just a litle Docker multi-container application to have a complete stack for running Zend Framework v2 into Docker containers using docker-compose tool.
 
 # Installation
 
