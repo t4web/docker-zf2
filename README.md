@@ -42,7 +42,7 @@ Here are the `docker-compose` built images:
 This results in the following running containers:
 
 ```bash
-> $ docker-compose ps
+$ docker-compose ps
          Name                  Command         State           Ports          
 -----------------------------------------------------------------------------
 dockerzf2_application_1   /sbin/my_init        Up                             
