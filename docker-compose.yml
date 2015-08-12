@@ -1,0 +1,35 @@
+application:
+    image: zf2/application
+    volumes:
+        - application:/var/www/application
+        - logs/application:/var/www/application/data/logs
+    tty: true
+db:
+    image: centurylink/mysql
+    ports:
+        - 3306:3306
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: zf2
+        MYSQL_USER: root
+        MYSQL_PASSWORD: root
+php:
+    image: zf2/php-fpm
+    expose:
+        - 9000:9000
+    links:
+        - db
+    volumes_from:
+        - application
+nginx:
+    image: zf2/nginx
+    ports:
+        - 80:80
+    links:
+        - php
+    volumes_from:
+        - application
+    volumes:
+        - logs/nginx/:/var/log/nginx
+
+
