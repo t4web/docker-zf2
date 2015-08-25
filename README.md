@@ -9,6 +9,7 @@ First, clone this repository:
 
 ```bash
 $ git clone git@github.com:t4web/docker-zf2.git
+$ composer create-project -n -sdev zendframework/skeleton-application application/
 $ sudo sed -i "2i127.0.1.1  application.loc" /etc/hosts
 $ cd docker-zf2/application && composer install
 ```
